@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+
+{#<form action="" method="post">#}
+{#     <button type="button" name="search">查找</button>#}
+{#    <br>#}
+<table border="5px">
+
+    {% for i in res %}
+        <tr>
+            <td>{{ i.music_id }}</td>
+    {#        <br>#}
+            <td><a href={{ i.music_url }}>{{ i.music_url }}</a></td>
+    {#        <br>#}
+            <td>{{ i.music_title }}</td>
+{#        <br>#}
+        </tr>
+    {% endfor %}
+
+</table>
+{#</form>#}
+<a href=""></a>
+</body>
+</html>
