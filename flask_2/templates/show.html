@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color:#ff0000 ;font-family: 楷体;font-max-size: x-large;align-content: ">DJ 音乐网</h1>
+<table border="5px">
+    <th>id</th>
+    <th>music_url</th>
+    <th>music_title</th>
+    <th>music_url_audio</th>
+
+
+    {% for i in res %}
+        <tr>
+            <td>{{ i.music_id }}</td>
+    {#        <br>#}
+            <td><a href={{ i.music_url }}>{{ i.music_url }}</a></td>
+    {#        <br>#}
+            <td>{{ i.music_title }}</td>
+            <td><a href={{ i.music_url_audio }}>{{ i.music_url_audio }}</a></td>
+{#        <br>#}
+        </tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>
